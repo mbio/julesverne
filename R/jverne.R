@@ -23,9 +23,13 @@
 
 jverne <- function() {
   books <- list(
-    "L'archipel en feu" = julesverne::archipel,
-    "Autour de la lune" = julesverne::lune,
-    "Cinq semaines en ballon" = julesverne::semaines
+    "L'archipel en feu" = julesverne::archipelenfeu,
+    "Autour de la lune" = julesverne::autourdelalune,
+    "Cinq semaines en ballon" = julesverne::cinqsemaines,
+    "Le tour du monde en 80 jours" = julesverne::tourdumonde,
+    "Vingt mille lieues sous les mers 1" = julesverne::souslesmers1,
+    "Vingt mille lieues sous les mers 2" = julesverne::souslesmers2,
+    "Voyage au centre de la terre" = julesverne::voyageterre
   )
 
   output <- data.frame(text = unlist(books, use.names = FALSE), stringsAsFactors = FALSE)
