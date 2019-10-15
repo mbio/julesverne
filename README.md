@@ -21,7 +21,7 @@ Vous pouvez installer le package à partir de Github:
 
 ```
 library(devtools)
-install_github("mbio/julesverne")
+devtools::install_github("mbio/julesverne")
 library(julesverne)
 ```
 
