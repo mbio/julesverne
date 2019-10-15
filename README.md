@@ -5,7 +5,7 @@ Ce package contient quelques livres de Jules Verne tels que distribués sur le [
 - `text`: le texte du livre (une ligne contient environ 70 caractères),
 - `book`: le titre du livre correspondant (de type `factor`).
 
-Les livres actuellement disponibles dans le package sont :
+Les livres actuellement disponibles dans le package sont:
 
 - `archipelenfeu`: L'archipel en feu (1884)
 - `autourdelalune`: Autour de la lune (1869)
@@ -27,13 +27,13 @@ library(julesverne)
 
 ## Utilisation
 
-La fonction principale du package retourne un `data frame` de 2 colonnes contenant l'ensemble des livres disponibles.
+La fonction principale du package retourne un `data frame` de 2 colonnes contenant l'ensemble des livres disponibles:
 
 ```
 verne()
 ```
 
-La commande suivante permet d'afficher le nombre de lignes disponibles pour chaque livre:
+La commande suivante permet d'afficher le nombre de lignes de chaque livre:
 
 ```
 library(dplyr)
@@ -42,7 +42,7 @@ verne() %>%
   summarise(nb_lignes = n())
 ```
 
-On peut afficher la liste des livres disponibles comme suit:
+On peut afficher la liste des livres comme suit:
 
 ```
 levels(verne()$book)
