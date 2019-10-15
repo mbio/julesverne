@@ -1,6 +1,6 @@
 # Un package R pour les livres de Jules Verne
 
-Ce package contient quelques livres de Jules Verne tels que distribués sur le [http://www.gutenberg.org/ebooks/author/60](Projet Gutenberg). Les livres sont encodés en UTF-8, préformattés et préparés pour des exercices de text mining utilisant la langue française. La structure est un `data frame` de 2 colonnes: 
+Ce package contient quelques livres de Jules Verne tels que distribués sur le (http://www.gutenberg.org/ebooks/author/60)[Projet Gutenberg]. Les livres sont encodés en UTF-8, préformattés et préparés pour des exercices de text mining utilisant la langue française. La structure est un `data frame` de 2 colonnes: 
 
 - `text`: le texte du livre (une ligne contient environ 70 caractères),
 - `book`: le titre du livre correspondant (de type `factor`).
@@ -50,4 +50,4 @@ levels(verne()$book)
 
 Pour le contenu d'un livre en particulier, par exemple `Cinq semaines en ballon`, entrez simplement `cinqsemaines` (le nom de la variable). Ou assignez-la à une autre variable: `livre1 <- cinqsemaines`. Le format retourné est une liste de caractères.
 
-Pour une description de chaque livre, utilisez `?archipelenfeu` par exemple ou l'équivalent pour les autres titres. Utilisez `?verne` pour la description de la fonction.
+Pour une description de chaque livre, utilisez `?archipelenfeu` ou l'équivalent pour les autres titres. Utilisez `?verne` pour la description de la fonction.
