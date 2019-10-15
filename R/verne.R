@@ -1,27 +1,29 @@
 #' Data frame de plusieurs livres de Jules Verne.
 #'
-#' Retourne un data frame de 2 colonnes: \code{text}, qui contient le texte du livre
-#' à raison d'environ 70 caractères par ligne, et \code{book}, qui contient le titre
+#' Retourne un data frame de 2 colonnes: \code{text} qui contient le texte du livre
+#' (environ 70 caractères par ligne), et \code{book} qui contient le titre
 #' du livre correspondant. Les titres du livre sont de type \code{factor}.
 #'
-#' @details Les textes sont extraits du Projet Gutenberg et modifiés pour ne pas inclure les
-#' informations de license ajoutés. Les lignes vides ont également été retirées.
+#' @details Les textes sont issus du Projet Gutenberg (\url{http://www.gutenberg.org/})
+#' et modifiés pour ne pas inclure les informations de license. Les lignes vides ont
+#' également été retirées.
 #'
-#' @return Un data frame de 2 colonnes: \code{text} et \code{book}
+#' @return Un data frame de 2 colonnes: \code{text}: une ligne de texte, \code{book}:
+#' le titre du livre correspondant.
 #'
-#' @name jverne
+#' @name verne
 #'
 #' @examples
 #'
 #' library(dplyr)
 #'
-#' jverne() %>%
+#' verne() %>%
 #'   group_by(book) %>%
 #'   summarise(total_lines = n())
 #'
 #' @export
 
-jverne <- function() {
+verne <- function() {
   books <- list(
     "L'archipel en feu" = julesverne::archipelenfeu,
     "Autour de la lune" = julesverne::autourdelalune,

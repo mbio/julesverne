@@ -1,9 +1,9 @@
 library(readr)
 library(devtools)
 
-# Lire les données des livres depuis Project Gutenberg
-# Retirer les informations d'entête et de pied de page
-# Ajouter les données au package
+# Lire les données des livres depuis Project Gutenberg.
+# Retirer les informations d'entête et de pied de page.
+# Ajouter les données au package.
 
 archipelenfeu <- read_lines("http://www.gutenberg.org/cache/epub/17660/pg17660.txt", skip = 32, na = "")
 archipelenfeu <- archipelenfeu[1:(length(archipelenfeu) - 386)]
@@ -39,4 +39,3 @@ voyageterre <- read_lines("http://www.gutenberg.org/cache/epub/4791/pg4791.txt",
 voyageterre <- voyageterre[1:(length(voyageterre) - 371)]
 voyageterre <- voyageterre[!is.na(voyageterre)]
 usethis::use_data(voyageterre, overwrite = TRUE)
-

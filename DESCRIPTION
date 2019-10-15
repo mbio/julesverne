@@ -1,15 +1,16 @@
 Package: julesverne
 Type: Package
 Title: Les livres de Jules Verne
-Version: 0.1.0
+Version: 1.0.0
 Authors@R: person("Marius", "Bio", email = "mariusbio07@gmail.com", role = c("aut", "cre"))
 Maintainer: Marius Bio <mariusbio07@gmail.com>
 Description: Quelques livres de Jules Verne pour des projets pratiques
     d'analyse de texte ou text mining.
-License: MIT + file LICENSE
+License: CCO
 Encoding: UTF-8
 LazyData: true
 URL: https://github.com/mbio/julesverne
 Depends:
     R (>= 3.1.2)
 BugReports: https://github.com/mbio/julesverne/issues
+RoxygenNote: 6.1.1

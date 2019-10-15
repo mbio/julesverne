@@ -1,6 +1,6 @@
 #' Les livres de Jules Verne.
 #'
-#' Ce package contient 5 livres de Jules Verne, formattés pour
+#' Ce package contient quelques livres de Jules Verne, formattés pour
 #' servir de jeux de données pour de l'analyse de texte.
 #' @docType package
 #' @name julesverne
@@ -40,7 +40,7 @@ NULL
 #' tel que distribué sur le Projet Gutenberg.
 #'
 #' @source \url{http://www.gutenberg.org/cache/epub/800/pg800.txt}
-#' @format Un vecteur de
+#' @format Un vecteur de 6989 éléments de chaînes de caractères.
 "tourdumonde"
 
 #' Vingt mille lieues sous les mers - première partie
